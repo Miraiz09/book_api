@@ -50,7 +50,7 @@ def update_book(book_id):
         return jsonify(book)
     else:
         return jsonify({"error": "Book not found"}), 404
-    
+     
     # Delete operation
 @app.route('/books/<int:book_id>', methods=['DELETE'])
 def delete_book(book_id):
